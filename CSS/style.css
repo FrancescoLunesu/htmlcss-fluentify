@@ -10,18 +10,22 @@
     clear: both;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 .container{
     width: 70%;
     max-width: 1200px;
+    height: 100%;
     margin: 0 auto;
     /* height da cancellare */
-    /* height: 100%;
-    background-color: orange; */
+    /* height: 100%; */
+    /* background-color: orange; */
 }
 /* sfondo header */
-.sfondo{
+.container.sfondo{
     background-image: url(https://cdn.fluentify.com/bundles/fluentifypublic/images/r4b/01/oldman.png);
-    background-position: center;
+    background-position: bottom left;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -29,25 +33,37 @@
 nav{
     height: 80px;
     /* background-color: white; */
-    padding: 10px;
+    padding: 10px 0;
+    line-height: 80px;
+    font-size: 12px;
 }
 
-nav div{
-    display: inline-block;
+.logo img{
+    float: left;
+    margin: 10px 0;
 }
 
-ul{
-    display: inline-block;
+.menu{
+    float: left;
+    vertical-align: middle;
 }
+
+.right{
+    float:left;
+    margin-left: 75px;
+}
+
 ul li{
     display: inline-block;
     color: white;
     padding: 0 10px;
 }
 
-nav ul{
+nav .menu{
     margin: 0 30px;
 }
+
+
 
 .titolo{
     width: 50%;
@@ -57,7 +73,7 @@ nav ul{
 }
 
 h1{
-    font-size: 50px;
+    font-size: 40px;
     color: white;
 }
 
@@ -71,11 +87,65 @@ h1{
 }
 
 .grigio{
-    height: 150px;
+    height: 100px;
     background-color: lightgray;
 }
 
+.sottotitolo{
+    text-align: center;
+    padding: 20px;
+}
+
+.sottotitolo h3{
+    color: rgba(0, 0, 0, 0.6);
+}
+
 .bianco{
-    height: 600px;
+    height: 400px;
     background-color: white;
+}
+
+.box{
+    height: 100%;
+    width: 33.3333%;
+    /* background-color: white;
+    border: 1px solid black; */
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+.box img{
+    width: 120px;
+    height: 120px;
+}
+
+.box h3{
+    color: lightgreen;
+}
+
+.box p{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.box h3, .box img, .box p{
+    padding: 10px;
+}
+
+/* definizione dei bottoni */
+button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 11px;
+}
+
+.right button:last-child, .titolo button{
+    text-transform: uppercase;
+    border: none;
+    background-color: #7cbb02;
 }
