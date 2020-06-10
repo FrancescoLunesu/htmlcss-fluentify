@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* height da cancellare */
+    /* height: 100%;
+    background-color: orange; */
+}
+/* sfondo header */
+.sfondo{
+    background-image: url(https://cdn.fluentify.com/bundles/fluentifypublic/images/r4b/01/oldman.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* definizione del nav e del suo contenuto */
+nav{
+    height: 80px;
+    /* background-color: white; */
+    padding: 10px;
+}
+
+nav div{
+    display: inline-block;
+}
+
+ul{
+    display: inline-block;
+}
+ul li{
+    display: inline-block;
+    color: white;
+    padding: 0 10px;
+}
+
+nav ul{
+    margin: 0 30px;
+}
+
+.titolo{
+    width: 50%;
+    height: 420px;
+    padding: 100px 10px;
+    /* background-color: orange; */
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+}
+
+.titolo div{
+    margin: 30px 0;
+}
+
+.blu{
+    height: 500px;
+    background-color: #0c325a;
+}
+
+.grigio{
+    height: 150px;
+    background-color: lightgray;
+}
+
+.bianco{
+    height: 600px;
+    background-color: white;
+}
