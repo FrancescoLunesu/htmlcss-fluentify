@@ -33,7 +33,6 @@ body{
 nav{
     height: 80px;
     /* background-color: white; */
-    padding: 10px 0;
     line-height: 80px;
     font-size: 12px;
 }
@@ -43,7 +42,7 @@ nav{
     margin: 10px 0;
 }
 
-.menu{
+/* .menu{
     float: left;
     vertical-align: middle;
 }
@@ -51,16 +50,45 @@ nav{
 .right{
     float:left;
     margin-left: 75px;
+} */
+
+.row1{
+    height: 100%;
+    width: 10%;
+    /* background-color: white;
+    border: 1px solid black; */
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.row2{
+    height: 100%;
+    width: 50%;
+    /* background-color: white;
+    border: 1px solid black; */
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.row3{
+    height: 100%;
+    width: 40%;
+    /* background-color: white;
+    border: 1px solid black; */
+    float: left;
+    text-align:  right;
+    padding: 10px 0;
+}
+
+button{
 }
 
 ul li{
     display: inline-block;
     color: white;
     padding: 0 10px;
-}
-
-nav .menu{
-    margin: 0 30px;
 }
 
 
@@ -144,7 +172,7 @@ button{
     font-size: 11px;
 }
 
-.right button:last-child, .titolo button{
+.row3 button:last-child, .titolo button{
     text-transform: uppercase;
     border: none;
     background-color: #7cbb02;
